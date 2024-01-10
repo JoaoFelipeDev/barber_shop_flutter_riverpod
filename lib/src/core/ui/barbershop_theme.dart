@@ -20,5 +20,14 @@ sealed class BarbershopTheme {
       errorBorder: _defaultInputBorder.copyWith(
           borderSide: const BorderSide(color: ColorsContants.red)),
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: ColorsContants.brow,
+        foregroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+        ),
+      ),
+    ),
   );
 }

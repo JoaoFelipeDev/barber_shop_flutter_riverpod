@@ -1,3 +1,4 @@
+import 'package:dw_barbershop/src/core/ui/constants.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -41,8 +42,45 @@ class _LoginPageState extends State<LoginPage> {
                           height: 24,
                         ),
                         TextFormField(
-                          decoration:
-                              const InputDecoration(label: Text('Email')),
+                          decoration: const InputDecoration(
+                            label: Text('E-mail'),
+                            hintText: 'E-mail',
+                            hintStyle: TextStyle(color: Colors.black),
+                            floatingLabelBehavior: FloatingLabelBehavior.never,
+                            labelStyle: TextStyle(color: Colors.black),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            label: Text('Senha'),
+                            hintText: 'Senha',
+                            hintStyle: TextStyle(color: Colors.black),
+                            floatingLabelBehavior: FloatingLabelBehavior.never,
+                            labelStyle: TextStyle(color: Colors.black),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 16,
+                        ),
+                        const Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            'Esqueceu a senha?',
+                            style: TextStyle(
+                                color: ColorsContants.brow, fontSize: 12),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                              minimumSize: const Size.fromHeight(56)),
+                          onPressed: () {},
+                          child: const Text('Acessar'),
                         )
                       ],
                     ),
