@@ -9,25 +9,25 @@ sealed class BarbershopTheme {
       borderSide: BorderSide(color: ColorsContants.grey));
 
   static ThemeData themeData = ThemeData(
-    useMaterial3: true,
-    inputDecorationTheme: InputDecorationTheme(
-      filled: true,
-      fillColor: Colors.white,
-      labelStyle: const TextStyle(color: ColorsContants.grey),
-      border: _defaultInputBorder,
-      enabledBorder: _defaultInputBorder,
-      focusedBorder: _defaultInputBorder,
-      errorBorder: _defaultInputBorder.copyWith(
-          borderSide: const BorderSide(color: ColorsContants.red)),
-    ),
-    elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: ColorsContants.brow,
-        foregroundColor: Colors.white,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+      useMaterial3: true,
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: Colors.white,
+        labelStyle: const TextStyle(color: ColorsContants.grey),
+        border: _defaultInputBorder,
+        enabledBorder: _defaultInputBorder,
+        focusedBorder: _defaultInputBorder,
+        errorBorder: _defaultInputBorder.copyWith(
+            borderSide: const BorderSide(color: ColorsContants.red)),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: ColorsContants.brow,
+          foregroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
         ),
       ),
-    ),
-  );
+      fontFamily: FontConstants.fontFamily);
 }

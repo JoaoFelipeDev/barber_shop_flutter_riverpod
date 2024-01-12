@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+sealed class FontConstants {
+  static const fontFamily = 'Poppins';
+}
+
 sealed class ColorsContants {
   static const brow = Color(0xFFB07B01);
   static const grey = Color(0xFF999999);
